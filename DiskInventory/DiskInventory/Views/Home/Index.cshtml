@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Disk Inventory";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome To My Nerd Castle</h1>
+    <p>Browse my inventory of CDs and DVDs and see if there is anything you are interested in.</p>
+    <div class="list-group">
+        <a asp-controller="Artist" asp-action="List"
+           class="list-group-item">Manage Artists</a>
+        <a asp-controller="Borrower" asp-action="List"
+           class="list-group-item">Manage Borrowers</a>
+        <a asp-controller="Inventory" asp-action="List"
+           class="list-group-item">Manage Disks</a>
+    </div>
+</div>
