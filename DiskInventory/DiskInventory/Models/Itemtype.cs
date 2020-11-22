@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace DiskInventory.Models
 {
-    public partial class Itemtype
+    public partial class ItemType
     {
-        public Itemtype()
+        public ItemType()
         {
             Inventory = new HashSet<Inventory>();
         }

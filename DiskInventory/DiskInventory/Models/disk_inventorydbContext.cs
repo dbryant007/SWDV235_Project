@@ -17,13 +17,13 @@ namespace DiskInventory.Models
 
         public virtual DbSet<Artist> Artist { get; set; }
         public virtual DbSet<ArtistItem> ArtistItem { get; set; }
-        public virtual DbSet<Artisttype> Artisttype { get; set; }
+        public virtual DbSet<ArtistType> ArtistType { get; set; }
         public virtual DbSet<BorrowedItem> BorrowedItem { get; set; }
         public virtual DbSet<Borrower> Borrower { get; set; }
         public virtual DbSet<Genre> Genre { get; set; }
         public virtual DbSet<Inventory> Inventory { get; set; }
         public virtual DbSet<ItemStatus> ItemStatus { get; set; }
-        public virtual DbSet<Itemtype> Itemtype { get; set; }
+        public virtual DbSet<ItemType> ItemType { get; set; }
         public virtual DbSet<ViewIndividualArtist> ViewIndividualArtist { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -85,9 +85,9 @@ namespace DiskInventory.Models
                     .HasConstraintName("FK__artistIte__itemI__398D8EEE");
             });
 
-            modelBuilder.Entity<Artisttype>(entity =>
+            modelBuilder.Entity<ArtistType>(entity =>
             {
-                entity.ToTable("artisttype");
+                entity.ToTable("artistType");
 
                 entity.Property(e => e.ArtistTypeId).HasColumnName("artistTypeID");
 
@@ -218,9 +218,9 @@ namespace DiskInventory.Models
                     .HasMaxLength(60);
             });
 
-            modelBuilder.Entity<Itemtype>(entity =>
+            modelBuilder.Entity<ItemType>(entity =>
             {
-                entity.ToTable("itemtype");
+                entity.ToTable("itemType");
 
                 entity.Property(e => e.ItemTypeId).HasColumnName("itemTypeID");
 

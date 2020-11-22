@@ -1,0 +1,52 @@
+﻿@model Inventory
+@{
+    string title = ViewBag.Action + " Inventory";
+    ViewBag.Title = title;
+}
+
+<h2>@ViewBag.Title</h2>
+<form asp-action="Edit" method="post">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="form-group">
+        <label asp-for="ItemName">Item Name</label>
+        <input asp-for="ItemName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="ReleaseDate">Release Date</label>
+        <input asp-for="ReleaseDate" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="GenreId">Genre</label>
+        <select asp-for="GenreId" class="form-control">
+            <option value="">select a genre</option>
+            @foreach (Genre t in ViewBag.Genres)
+            {
+                <option value="@t.GenreId">@t.Description</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="ItemStatusId">Item Status</label>
+        <select asp-for="ItemStatusId" class="form-control">
+            <option value="">select a status</option>
+            @foreach (ItemStatus t in ViewBag.ItemStatuses)
+            {
+                <option value="@t.ItemStatusId">@t.Description</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="ItemTypeId">Item Type</label>
+        <select asp-for="ItemTypeId" class="form-control">
+            <option value="">select a type</option>
+            @foreach (ItemType t in ViewBag.ItemTypes)
+            {
+                <option value="@t.ItemTypeId">@t.Description</option>
+            }
+        </select>
+    </div>
+
+    <input type="hidden" asp-for="ItemId" />
+    <button type="submit" class="btn btn-primary">@ViewBag.Action</button>
+    <a asp-controller="Inventory" asp-action="List" class="btn btn-primary">Cancel</a>
+</form>

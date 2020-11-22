@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace DiskInventory.Models
 {
-    public partial class Artisttype
+    public partial class ArtistType
     {
-        public Artisttype()
+        public ArtistType()
         {
             Artist = new HashSet<Artist>();
         }

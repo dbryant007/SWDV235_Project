@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dbryant\\Downloads\\SWDV-235\\Project\\DiskInventory\\DiskInventory\\DiskInventory.csproj": {}
+    "C:\\Users\\dbryant\\Documents\\GitHub\\SWDV235_Project\\DiskInventory\\DiskInventory\\DiskInventory.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dbryant\\Downloads\\SWDV-235\\Project\\DiskInventory\\DiskInventory\\DiskInventory.csproj": {
+    "C:\\Users\\dbryant\\Documents\\GitHub\\SWDV235_Project\\DiskInventory\\DiskInventory\\DiskInventory.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dbryant\\Downloads\\SWDV-235\\Project\\DiskInventory\\DiskInventory\\DiskInventory.csproj",
+        "projectUniqueName": "C:\\Users\\dbryant\\Documents\\GitHub\\SWDV235_Project\\DiskInventory\\DiskInventory\\DiskInventory.csproj",
         "projectName": "DiskInventory",
-        "projectPath": "C:\\Users\\dbryant\\Downloads\\SWDV-235\\Project\\DiskInventory\\DiskInventory\\DiskInventory.csproj",
+        "projectPath": "C:\\Users\\dbryant\\Documents\\GitHub\\SWDV235_Project\\DiskInventory\\DiskInventory\\DiskInventory.csproj",
         "packagesPath": "C:\\Users\\dbryant\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dbryant\\Downloads\\SWDV-235\\Project\\DiskInventory\\DiskInventory\\obj\\",
+        "outputPath": "C:\\Users\\dbryant\\Documents\\GitHub\\SWDV235_Project\\DiskInventory\\DiskInventory\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dbryant\\AppData\\Roaming\\NuGet\\NuGet.Config",
