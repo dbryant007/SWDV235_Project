@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using DiskInventory.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace DiskInventory.Controllers
 {
@@ -17,7 +18,7 @@ namespace DiskInventory.Controllers
         }
         public IActionResult List()                                             //creates the initial list of items from the database
         {
-            List<Inventory> inventory_items = context.Inventory.OrderBy(a => a.ItemName).ToList();
+            List<Inventory> inventory_items = context.Inventory.OrderBy(a => a.ItemName).Include(g => g.Genre).Include(s => s.ItemStatus).Include(t => t.ItemType).ToList();
             return View(inventory_items);
         }
 

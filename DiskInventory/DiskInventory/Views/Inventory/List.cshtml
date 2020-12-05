@@ -30,9 +30,9 @@
                     <td>@inventory.ItemId</td>
                     <td>@inventory.ItemName</td>
                     <td>@inventory.ReleaseDate.ToString(string.Format("MM/dd/yyyy"))</td>
-                    <td>@inventory.GenreId</td>
-                    <td>@inventory.ItemStatusId</td>
-                    <td>@inventory.ItemTypeId</td>
+                    <td>@inventory.Genre.Description</td>
+                    <td>@inventory.ItemStatus.Description</td>
+                    <td>@inventory.ItemType.Description</td>
                     <td>
                         <a asp-controller="Inventory" asp-action="edit" asp-route-id="@inventory.ItemId">Edit</a>
                         <a asp-controller="Inventory" asp-action="delete" asp-route-id="@inventory.ItemId">Delete</a>

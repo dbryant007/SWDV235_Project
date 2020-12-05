@@ -75,3 +75,5 @@ C:\Users\dbryant\Documents\GitHub\SWDV235_Project\DiskInventory\DiskInventory\ob
 C:\Users\dbryant\Documents\GitHub\SWDV235_Project\DiskInventory\DiskInventory\obj\Release\netcoreapp3.1\Razor\Views\Borrower\Edit.cshtml.g.cs
 C:\Users\dbryant\Documents\GitHub\SWDV235_Project\DiskInventory\DiskInventory\obj\Release\netcoreapp3.1\Razor\Views\Inventory\Delete.cshtml.g.cs
 C:\Users\dbryant\Documents\GitHub\SWDV235_Project\DiskInventory\DiskInventory\obj\Release\netcoreapp3.1\Razor\Views\Inventory\Edit.cshtml.g.cs
+C:\Users\dbryant\Documents\GitHub\SWDV235_Project\DiskInventory\DiskInventory\obj\Release\netcoreapp3.1\Razor\Views\BorrowedItem\Edit.cshtml.g.cs
+C:\Users\dbryant\Documents\GitHub\SWDV235_Project\DiskInventory\DiskInventory\obj\Release\netcoreapp3.1\Razor\Views\BorrowedItem\List.cshtml.g.cs

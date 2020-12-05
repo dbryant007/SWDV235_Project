@@ -100,10 +100,11 @@ namespace DiskInventory.Models
             modelBuilder.Entity<BorrowedItem>(entity =>
             {
                 entity.HasKey(e => new { e.BorrowDate, e.BorrowerId, e.ItemId })
-                    .HasName("PK__borrowed__3BD586977EAB7902");
+                  .HasName("PK__borrowed__3BD586977EAB7902");
 
                 entity.ToTable("borrowedItem");
 
+                //entity.Property(e => e.Id).HasColumnName("Id");
                 entity.Property(e => e.BorrowDate)
                     .HasColumnName("borrowDate")
                     .HasColumnType("date");
